@@ -34,7 +34,8 @@ angular.module("main")
 
 using awesome [recast](https://github.com/benjamn/recast) library for JavaScript AST parsing and manipulation.
 
-== Dependencies ==
+Dependencies
+------------
 ```
 npm install recast underscore
 ```
