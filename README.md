@@ -4,13 +4,13 @@ Essenitally, it allows to transform this:
 
 ```js
 // answer.js
-define(["angular"], function() {
+define(["angular"], function(angular) {
   angular.module("the.answer")
     .value("TheAnswer", 42);
 });
 
 // main.js
-define(["angular", "the.answer"], function() {
+define(["angular", "the.answer"], function(angular) {
   angular.module("main", ["the.answer"])
     .run(["TheAnswer", function(TheAnswer) {
       console.log(TheAnswer);
